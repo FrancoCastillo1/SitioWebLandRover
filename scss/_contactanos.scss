@@ -1,0 +1,103 @@
+.contactoEncabezado {
+    width: 100%;
+    height: 250px;
+    background-image: url(../Imagenes-html/personatrabajando_PF.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flexboxCenterCenter();
+
+    h2 {
+        color: rgb(36, 148, 11);
+        font-weight: bold;
+      }
+  }
+  
+.contacto {
+    width: 50%;
+    height: 566px;
+    display: flex;
+    margin: 20px auto;
+    border: 2px solid $color-principal;
+
+   .contactoImagen {
+        width: 50%;
+        height: 100%;
+        @include flexboxCenterCenter();
+        background-image: url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+            color: white;
+          }
+      }
+    .contactoRight {
+        width: 50%;
+
+        h2 {
+            color: $color-principal;
+            padding-top: 15px;
+            font-size: 1.8rem;
+            margin-left: 15px;
+          }
+        .formFlex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 15px;
+            
+            label {
+                font-size: 1.4rem;
+              }
+            input {
+                outline: none;
+                border: none;
+                width: 100%;
+                margin-bottom: 10px;
+              }
+            .contactoInputNoButtom {
+                border-bottom: 1px solid rgb(43, 43, 235);
+
+                &:focus{
+                    color:$color-principal;
+                     background-color: #ecf3f7;
+                }
+              }
+            .contactoMensaje {
+                width: 100%;
+                margin-bottom: 3px;
+
+                textarea {
+                    resize: none;
+                    width: 100%;
+                    border-bottom: 1px solid rgb(43, 43, 235);
+                    height: 60px;
+
+                    &:focus{
+                        color: $color-principal;
+                        background-color: #ecf3f7;
+                        outline: 1px solid rgb(43, 43, 235);
+                    }
+                  }
+              }
+            .contactoInputButtom {
+                width: 100%;
+                margin-top: 30px;
+
+                input {
+                    background-color: rgb(20, 87, 7);
+                    height: 40px;
+                    color: white;
+                    font-size: 1.1rem;
+
+                    &:active{
+                        background-color: rgb(66, 105, 58);
+                    }
+                }
+            }
+            
+        }
+    }
+}

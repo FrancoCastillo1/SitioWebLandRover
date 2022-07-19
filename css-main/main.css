@@ -1,0 +1,622 @@
+/*variables generales */
+/*variables-especificas */
+/*general para todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif; }
+
+h1 {
+  color: #176906;
+  font-size: 2.4rem;
+  margin: 25px;
+  text-align: center; }
+
+body {
+  overflow-x: hidden; }
+
+/*header */
+header {
+  background-color: white;
+  display: flex;
+  border: 2px solid #176906;
+  width: 100vw; }
+  header .encabezado_logo img {
+    width: 230px;
+    height: 70px;
+    margin-left: 20px; }
+  header .containerNav div form {
+    margin-left: 15px; }
+  header nav .container-fluid ul li a {
+    font-size: 1.2rem; }
+    header nav .container-fluid ul li a:hover {
+      color: #176906; }
+  header nav .container-fluid form input:focus {
+    border: 4px solid #198754;
+    box-shadow: none; }
+
+/*footer */
+.footer {
+  border-top: 1px solid #176906;
+  font-size: 1.2rem;
+  color: #176906;
+  padding: 20px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center; }
+  .footer h3 {
+    font-size: 1.5rem;
+    color: #095509;
+    margin-left: 30px; }
+  .footer .footerLeft ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+  .footer .footerLeft li {
+    margin: 15px;
+    padding: 15px; }
+  .footer .footerLeft .footer__facebook {
+    color: #3b5998;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.6rem; }
+  .footer .footerLeft .footer__instagram {
+    color: #ce9a0b;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.6rem; }
+  .footer .footerLeft .footer__linkedin {
+    color: #0072b1;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.6rem; }
+  .footer .footerRightMedium ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none; }
+    .footer .footerRightMedium ul li {
+      padding-top: 5px; }
+      .footer .footerRightMedium ul li a {
+        text-decoration: none;
+        color: #176906; }
+        .footer .footerRightMedium ul li a:hover {
+          border-bottom: 1px solid #095509; }
+    .footer .footerRightMedium ul .cookiesBoostrap .btn-light {
+      background: none;
+      border: none;
+      outline: none;
+      color: #176906;
+      font-size: 1.2rem; }
+    .footer .footerRightMedium ul .cookiesBoostrap .inputDivCookiesFooter form label {
+      font-size: 1.0rem;
+      padding: 5px; }
+  .footer .footerCopyright {
+    border-top: 1px solid #176906;
+    margin-top: 40px;
+    grid-column: 2/3; }
+    .footer .footerCopyright h4 {
+      font-size: 1.4rem; }
+      .footer .footerCopyright h4:hover {
+        color: #044104;
+        cursor: pointer; }
+    .footer .footerCopyright i {
+      color: black; }
+
+/*breadcrumb Boostrap */
+.breadcrumb {
+  display: flex;
+  margin: 10px; }
+  .breadcrumb li {
+    margin: 5px; }
+
+.encabezado_principal {
+  width: 100%;
+  height: 600px;
+  background: url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .encabezado_principal h2 {
+    font-size: 2.8rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-left: 15px; }
+
+.cuerpo_secciones {
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 5px;
+  grid-template-rows: 300px; }
+  .cuerpo_secciones .seccionContenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .cuerpo_secciones .seccionContenido h2 {
+      color: #176906;
+      margin-left: 55px;
+      margin-top: 5px;
+      margin-right: 50px;
+      font-size: 1.4rem; }
+    .cuerpo_secciones .seccionContenido p {
+      color: #176906;
+      margin-right: 50px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      font-size: 1.1rem; }
+      .cuerpo_secciones .seccionContenido p b {
+        color: #042697; }
+  .cuerpo_secciones .seccionesIndexImagen {
+    background-image: url(../Imagenes-html/sub-imagen.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 90%; }
+  .cuerpo_secciones .seccionesIndexImagen--2 {
+    background-image: url(../Imagenes-html/sub-imagen-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    order: 1;
+    justify-self: flex-end;
+    width: 90%; }
+
+.conocenosIndex {
+  width: 80vw;
+  margin: 0px auto;
+  height: 350px;
+  border-radius: 4%;
+  background-color: #176906;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px; }
+  .conocenosIndex .divleftIndex1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%; }
+    .conocenosIndex .divleftIndex1 p, .conocenosIndex .divleftIndex1 h2 {
+      color: white;
+      /*problema a arreglar */
+      padding: 20px; }
+  .conocenosIndex .divRightIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+    .conocenosIndex .divRightIndex i {
+      font-size: 2.5rem;
+      color: white; }
+    .conocenosIndex .divRightIndex button {
+      background-color: #0072b1;
+      color: white;
+      height: 40px;
+      width: 100px;
+      border-radius: 20px; }
+
+.seccionNuestrosClientes {
+  height: 400px;
+  width: 85vw;
+  margin: 25px auto 0px auto; }
+  .seccionNuestrosClientes h2 {
+    font-size: 1.5rem;
+    color: #105e10; }
+  .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item div {
+      width: 300px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid #105e10;
+      border-radius: 3%;
+      justify-content: space-evenly; }
+      .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item div p {
+        font-size: 0.9rem;
+        padding: 15px;
+        color: #176906; }
+      .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item div h2 {
+        font-size: 1.2rem;
+        color: black; }
+      .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item div i {
+        color: #2b2bc9; }
+      .seccionNuestrosClientes #carouselExampleFade .carousel-inner .carousel-item div img {
+        width: 120px;
+        border-radius: 50%;
+        height: 120px; }
+
+.sacaTurno {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Imagenes-html/sacaTurno.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .sacaTurno h1 {
+    color: #206b09;
+    background-color: black;
+    font-size: 1.9rem; }
+
+.seccionTurnos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px; }
+  .seccionTurnos form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    width: 60%; }
+    .seccionTurnos form h2 {
+      color: #176906;
+      text-align: center;
+      margin-top: 10px; }
+    .seccionTurnos form div {
+      margin: 15px; }
+      .seccionTurnos form div input {
+        margin-left: 30px; }
+    .seccionTurnos form .botonTurnos input {
+      background-color: #145707;
+      height: 40px;
+      color: white;
+      font-size: 1.1rem;
+      width: 300px; }
+      .seccionTurnos form .botonTurnos input:active {
+        background-color: #42693a; }
+  .seccionTurnos #carouselExampleSlidesOnly .carousel-inner {
+    width: 450px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 45px; }
+
+.seccionTurnos form
+.seccionTurnos form div {
+  margin: 15px; }
+
+.seccionTurnos form div input {
+  margin-left: 30px; }
+
+.seccionTurnos form .botonTurnos input {
+  background-color: #145707;
+  height: 40px;
+  color: white;
+  font-size: 1.1rem;
+  width: 300px; }
+
+.seccionTurnos form .botonTurnos input:active {
+  background-color: #42693a; }
+
+#carouselExampleSlidesOnly .carousel-inner {
+  width: 450px;
+  height: 400px;
+  margin-left: 30px;
+  margin-top: 45px; }
+
+.sobreNosotrosImg {
+  width: 98vw;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sobreNosotrosImg img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    order: 1; }
+  .sobreNosotrosImg div {
+    width: 50%;
+    height: 100%;
+    color: white;
+    background-color: #0072b1;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sobreNosotrosImg div h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px; }
+
+.sobreNosotros {
+  padding: 20px;
+  font-size: 1.1rem; }
+  .sobreNosotros h2, .sobreNosotros b {
+    color: #042697; }
+  .sobreNosotros p {
+    color: #176906; }
+
+.sectionPresentacionSucursales {
+  display: flex;
+  width: 100vw;
+  height: 250px; }
+  .sectionPresentacionSucursales .encontranosDivSucursales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    width: 50%;
+    background-color: #198754; }
+  .sectionPresentacionSucursales img {
+    width: 50%; }
+
+.h1Sucursales {
+  text-decoration: overline; }
+
+.cardSucursales {
+  width: 96vw;
+  margin: 10px auto 0px auto; }
+  .cardSucursales .row .card {
+    margin-top: 15px;
+    margin-left: 25px; }
+    .cardSucursales .row .card iframe {
+      width: 100%; }
+    .cardSucursales .row .card p {
+      color: #176906; }
+  .cardSucursales .row .btn-success {
+    background-color: #176906;
+    border: 1px solid #176906; }
+    .cardSucursales .row .btn-success:hover {
+      background-color: #176906;
+      border: 1px solid #176906; }
+    .cardSucursales .row .btn-success:active {
+      background-color: #176906;
+      border: 1px solid #176906; }
+
+.sectionPreguntasFrecuentes {
+  width: 96vw;
+  margin: 50px auto 0px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 270px);
+  gap: 35px; }
+  .sectionPreguntasFrecuentes a {
+    text-decoration: none;
+    color: #3652af; }
+    .sectionPreguntasFrecuentes a:hover {
+      border-bottom: 1px solid #3652af; }
+  .sectionPreguntasFrecuentes b {
+    color: #042697; }
+  .sectionPreguntasFrecuentes p {
+    font-size: 0.9rem;
+    padding: 5px;
+    color: #176906; }
+  .sectionPreguntasFrecuentes h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    color: #176906; }
+  .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom {
+    grid-column: 1/4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom h2 {
+      font-size: 1.7rem; }
+    .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom p {
+      font-size: 1.1rem; }
+
+.contactoEncabezado {
+  width: 100%;
+  height: 250px;
+  background-image: url(../Imagenes-html/personatrabajando_PF.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contactoEncabezado h2 {
+    color: #24940b;
+    font-weight: bold; }
+
+.contacto {
+  width: 50%;
+  height: 566px;
+  display: flex;
+  margin: 20px auto;
+  border: 2px solid #176906; }
+  .contacto .contactoImagen {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .contacto .contactoImagen h2 {
+      color: white; }
+  .contacto .contactoRight {
+    width: 50%; }
+    .contacto .contactoRight h2 {
+      color: #176906;
+      padding-top: 15px;
+      font-size: 1.8rem;
+      margin-left: 15px; }
+    .contacto .contactoRight .formFlex {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 15px; }
+      .contacto .contactoRight .formFlex label {
+        font-size: 1.4rem; }
+      .contacto .contactoRight .formFlex input {
+        outline: none;
+        border: none;
+        width: 100%;
+        margin-bottom: 10px; }
+      .contacto .contactoRight .formFlex .contactoInputNoButtom {
+        border-bottom: 1px solid #2b2beb; }
+        .contacto .contactoRight .formFlex .contactoInputNoButtom:focus {
+          color: #176906;
+          background-color: #ecf3f7; }
+      .contacto .contactoRight .formFlex .contactoMensaje {
+        width: 100%;
+        margin-bottom: 3px; }
+        .contacto .contactoRight .formFlex .contactoMensaje textarea {
+          resize: none;
+          width: 100%;
+          border-bottom: 1px solid #2b2beb;
+          height: 60px; }
+          .contacto .contactoRight .formFlex .contactoMensaje textarea:focus {
+            color: #176906;
+            background-color: #ecf3f7;
+            outline: 1px solid #2b2beb; }
+      .contacto .contactoRight .formFlex .contactoInputButtom {
+        width: 100%;
+        margin-top: 30px; }
+        .contacto .contactoRight .formFlex .contactoInputButtom input {
+          background-color: #145707;
+          height: 40px;
+          color: white;
+          font-size: 1.1rem; }
+          .contacto .contactoRight .formFlex .contactoInputButtom input:active {
+            background-color: #42693a; }
+
+/* 
+  .formFlex .contactoInputNoButtom:focus {
+    color: rgb(23, 105, 6);
+    background-color: #ecf3f7;
+  }
+  .formFlex .contactoMensaje textarea:focus {
+    color: rgb(23, 105, 6);
+    background-color: #ecf3f7;
+    outline: 1px solid rgb(43, 43, 235);
+  }
+  .formFlex .contactoInputButtom input:active {
+    background-color: rgb(66, 105, 58);
+  } */
+@media screen and (max-width: 320px) {
+  /*Header */
+  .encabezado_logo img {
+    width: 90%; }
+  /*Footer */
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+    padding: 5px; }
+    .footer .footer h3 {
+      font-size: 1.3rem;
+      color: #095509; }
+    .footer .footerLeft li {
+      margin: 10px;
+      padding: 10px; }
+      .footer .footerLeft li .footer__facebook,
+      .footer .footerLeft li .footer__instagram,
+      .footer .footerLeft li .footer__linkedin {
+        font-size: 1.4rem;
+        padding: 8px; }
+    .footer .footerRightMedium {
+      border-top: 1px solid #176906; }
+    .footer .footerCopyright {
+      grid-column: 1/2; }
+    .footer #ResponsiveArriba {
+      margin-bottom: 25px;
+      /*esperemos que sea footer */
+      margin-right: 20px; }
+  /*Index */
+  .encabezado_principal {
+    height: 450px;
+    background-position: center; }
+  .cuerpo_secciones {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px; }
+    .cuerpo_secciones .seccionContenido {
+      justify-content: space-around;
+      width: 100%;
+      height: 300px; }
+      .cuerpo_secciones .seccionContenido p {
+        margin: 30px 0 30px 0; }
+      .cuerpo_secciones .seccionContenido h2 {
+        margin: 50px 5px 20px 0; }
+    .cuerpo_secciones .seccionesIndexImagen,
+    .cuerpo_secciones .seccionesIndexImagen--2 {
+      display: none; }
+  .conocenosIndex {
+    height: 350px;
+    width: 95vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .conocenosIndex .divleftIndex1 {
+      justify-content: none;
+      width: 100%;
+      height: 100%; }
+      .conocenosIndex .divleftIndex1 p, .conocenosIndex .divleftIndex1 h2 {
+        padding: 14px;
+        font-size: 0.9rem; }
+      .conocenosIndex .divleftIndex1 h2 {
+        font-size: 1.1rem; }
+    .conocenosIndex .divRightIndex {
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      align-items: flex-end; }
+  /*Preguntas Frecuentes */
+  .sectionPreguntasFrecuentes {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 270px); }
+  .divContainerPreguntasFrecuentesBottom {
+    grid-column: 1/2; }
+  /*Sobre nosotros servicios */
+  .serviciosContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); }
+    .serviciosContainer div {
+      flex-direction: column;
+      grid-column: 1/2; }
+    .serviciosContainer .divLeft {
+      width: 100%; }
+    .serviciosContainer .serviciosCursos {
+      grid-row: 4/5;
+      grid-column: 1/2;
+      display: block; }
+  /*Contacto */
+  .contacto {
+    width: 85%;
+    border: 2px solid #176906;
+    height: 530px; }
+    .contacto .contactoImagen {
+      display: none; }
+    .contacto .contactoRight {
+      width: 100%; }
+  /* Turnos */
+  .seccionTurnos #carouselExampleSlidesOnly {
+    display: none; }
+  .seccionTurnos form {
+    font-size: 1.1rem;
+    width: 95%; }
+    .seccionTurnos form div {
+      margin: 15px 0; }
+      .seccionTurnos form div input {
+        margin-left: 5px; }
+    .seccionTurnos form .botonTurnos input {
+      width: 150px;
+      margin-right: 15px; } }

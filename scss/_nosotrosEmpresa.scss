@@ -1,0 +1,36 @@
+.sobreNosotrosImg{
+    width: 98vw;
+    height: 300px;
+    @include flexboxCenterCenter();
+
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        order: 1;
+      }
+    div{
+        width: 50%;
+        height: 100%;
+        color:white;
+        background-color: #0072b1;
+        border-radius: 4%;
+        @include flexboxCenterCenter();
+
+        h2{
+            font-size:1.6rem;
+            margin-bottom: 20px;
+          }
+      }
+  }
+  .sobreNosotros{
+    padding: 20px;
+    font-size: 1.1rem;
+
+    h2 , b{
+        color: rgb(4, 38, 151);
+       }
+    p{
+        color:$color-principal
+    }
+  }

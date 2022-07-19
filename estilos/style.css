@@ -4,7 +4,7 @@ font-family: 'Roboto Slab', serif;
 */
 
                                      /*Estilos generales */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,39 +18,10 @@ h1 {
 }
 body{
   overflow-x: hidden;
-}
+} */
 /*Nuevo Header Boostrap */
-header {
-  background-color: white;
-  display: flex;
-  border: 2px solid rgb(23, 105, 6);
-  /* align-items: center;
-  justify-content: space-around; */
-  width: 100vw;
-}                                
-.encabezado_logo img {
-  width: 230px;
-  height: 70px;
-  margin-left: 20px;
-}
- .containerNav div .ulNavBoostrap{
-  margin-left: 25px;
-}
-.containerNav div form{
-  margin-left: 45px;
-}
-nav .container-fluid ul li a{      /* hola vani , si te pregunatas porque hice tanto margin es porque no me permitio usar display flex  */
-  font-size: 1.2rem;
-} 
-nav .container-fluid ul li a:hover{
-  color:rgb(23, 105, 6);
-}
-nav .container-fluid form input:focus{
- border:4px solid  #198754;;
- box-shadow: none;
-}
 /*Footer */
-.footer{
+/* .footer{
   border-top: 1px solid rgb(23, 105, 6);
   font-size: 1.2rem;
   color: rgb(23, 105, 6);
@@ -123,8 +94,8 @@ nav .container-fluid form input:focus{
 .footerCopyright h4:hover{
   color:rgb(4, 65, 4);
   cursor:pointer
-}
-.auto-animación{
+} */
+/* .auto-animación{
   position: fixed;
   right: 0;
   bottom: 0;
@@ -141,21 +112,10 @@ nav .container-fluid form input:focus{
   100%{
     transform: rotate(1800deg);
   }
-} 
-.inputDivCookiesFooter form label{
-  font-size: 1.0rem;
-  padding: 5px;
-}
-.cookiesBoostrap .btn-light{
-  background: none;
-  border: none;
-  outline: none;
-  color:rgb(23, 105, 6);
-  font-size: 1.2rem;
-}
+}  */
                                         /*Estilos Especificos */
 /*Index*/
-.encabezado_principal {
+/* .encabezado_principal {
   width: 100%;
   height: 600px;
   background: url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg);
@@ -229,7 +189,7 @@ nav .container-fluid form input:focus{
   grid-template-columns: repeat(2 ,1fr);
   margin-top: 20px;
 }
-.conocenosIndex .divLeftIndex{
+.conocenosIndex .divLeftIndex1{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -291,6 +251,7 @@ nav .container-fluid form input:focus{
 .seccionNuestrosClientes .carousel-inner .carousel-item p{
   font-size:0.9rem;
   padding: 15px;
+  color:rgb(23, 105, 6)
 }
 .seccionNuestrosClientes .carousel-inner .carousel-item h2{
   font-size:1.2rem;
@@ -298,58 +259,17 @@ nav .container-fluid form input:focus{
 }
 .seccionNuestrosClientes i{
   color:rgb(43, 43, 201)
-}
+} */
 /*preguntasFrecuentes */
-.sectionPreguntasFrecuentes{
-  width: 96vw;
-  margin:50px auto 0px auto;
-  display: grid;
-  grid-template-columns: repeat(3 ,1fr);
-  grid-template-rows: repeat(4 ,270px); 
-  gap: 35px  
-} 
-.sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes{  
- /*  margin-bottom: 35px; */
- display: flex;
- flex-direction: column;
- justify-content: space-around;
-} 
-.sectionPreguntasFrecuentes  div h2 ,p {
-  padding: 5px;
-   color:rgb(23, 105, 6);
-}
-.sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes h2{
-  font-size: 1.5rem;
-}
-.sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes p{
-  font-size: 0.9rem;
-}
-.sectionPreguntasFrecuentes  b{
-  color:rgb(4, 38, 151);
-}
-.sectionPreguntasFrecuentes  a{
-  text-decoration: none;
-  color:rgb(54, 82, 175)
-}
-.sectionPreguntasFrecuentes a:hover{
-  border-bottom: 1px solid rgb(54, 82, 175)  ;
-}
-.divContainerPreguntasFrecuentesBottom{
-  grid-column: 1/4;
-  text-align: center;
-  display: flex;
- flex-direction: column;
- justify-content: space-around;
-}
 /*Sobre nosotros */
-.breadcrumb{
+/* .breadcrumb{
   display: flex;
   margin:10px 
 }
 .breadcrumb li{
   margin:5px
-}
-.sobreNosotrosImg{
+} */
+/* .sobreNosotrosImg{
   width: 98vw;
   height: 300px;
   display: flex;
@@ -382,9 +302,9 @@ nav .container-fluid form input:focus{
 }
 .sobreNosotros h2 , b{
  color: rgb(4, 38, 151);
-}
+} */
 /*Sobre nosostros Servicios */
-.serviciosContainer{
+/* .serviciosContainer{
  display: grid;
  grid-template-columns: repeat(7 , 1fr);
  grid-template-rows: repeat(3 , 300px);
@@ -473,9 +393,9 @@ nav .container-fluid form input:focus{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 /*Contacto */
-.contacto {
+/* .contacto {
   width: 50%;
   display: flex;
   margin: 20px auto;
@@ -567,9 +487,9 @@ nav .container-fluid form input:focus{
 }
 .formFlex .contactoInputButtom input:active {
   background-color: rgb(66, 105, 58);
-}
+} */
 /*Nuestras Sucursales */
-.sectionPresentacionSucursales{
+/* .sectionPresentacionSucursales{
   display: flex;
   width: 100vw;
   height: 250px;
@@ -611,9 +531,9 @@ nav .container-fluid form input:focus{
 .btn-success:active{
   background-color:rgb(23, 105, 6);
   border: 1px solid rgb(23, 105, 6);
-}
+} */
 /*Turnos */
-.sacaTurno {
+/* .sacaTurno {
   width: 100%;
   height: 250px;
   display: flex;
@@ -669,15 +589,16 @@ nav .container-fluid form input:focus{
   height: 400px;
   margin-left:30px;
   margin-top: 45px;
-}
+} */
 /*Media Query*/
-@media screen and (max-width: 320px) {
+ 
+/* @media screen and (max-width: 320px) { */
   /*Header */
-  .encabezado_logo img {
+/*   .encabezado_logo img {
     width: 90%;
-  }
+  } */
 /*Footer */
-  .footer {
+  /* .footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-row-gap: 10px;
@@ -707,9 +628,9 @@ nav .container-fluid form input:focus{
 #ResponsiveArriba{
   margin-bottom: 25px;
   margin-right: 20px;
-}
+} */
   /*Index */
-  .encabezado_principal {
+  /* .encabezado_principal {
     height: 450px;
     background-position: center;
   }
@@ -754,9 +675,9 @@ nav .container-fluid form input:focus{
   .conocenosIndex .divleftIndex1 > p ,
 .conocenosIndex .divleftIndex1 > h2{         
   padding: 14px;
-}
+} */
   /*Preguntas Frecuentes */
-  .sectionPreguntasFrecuentes{
+  /* .sectionPreguntasFrecuentes{
     grid-template-columns: repeat(1 ,1fr);
     grid-template-rows: repeat(9 , 270px);
   }
@@ -764,7 +685,7 @@ nav .container-fluid form input:focus{
     grid-column: 1/2;
   }
   /*Sobre nosotros servicios */
-  .serviciosContainer{
+  /* .serviciosContainer{
     grid-template-columns: repeat(1 ,1fr);
     grid-template-rows: repeat(4 ,1fr);
   }
@@ -781,7 +702,7 @@ nav .container-fluid form input:focus{
     display: block;
   }
   /*Contacto */
-  .contacto {
+ /*  .contacto {
     width: 85%;
     border: 2px solid rgb(23, 105, 6);
     height: 530px;
@@ -791,9 +712,9 @@ nav .container-fluid form input:focus{
   }
   .contactoRight {
     width: 100%;
-  }
+  }   */
   /* Turnos */
-  .seccionTurnos form {
+  /* .seccionTurnos form {
     font-size: 1.1rem;
     width: 95%;
   }
@@ -810,4 +731,4 @@ nav .container-fluid form input:focus{
   #carouselExampleSlidesOnly{
     display: none;
   }
-}
+} */

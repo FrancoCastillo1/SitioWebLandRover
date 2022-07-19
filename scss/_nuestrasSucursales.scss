@@ -1,0 +1,50 @@
+.sectionPresentacionSucursales{
+    display: flex;
+    width: 100vw;
+    height: 250px;
+
+    .encontranosDivSucursales{
+        @include flexboxCenterCenter();
+        font-size: 1.4rem;
+        color:white;
+        width: 50%;
+        background-color: map-get($coloresSecundarios , "$color-secundario1");
+    }
+    img{
+        width: 50%;
+      }
+}
+.h1Sucursales{
+    text-decoration: overline;
+}
+.cardSucursales{
+    width: 96vw;
+    margin: 10px auto 0px auto;
+
+    .row{
+        .card{
+            margin-top:15px ;
+            margin-left: 25px;
+
+            iframe{
+                width: 100%;
+              }
+            p{
+                color:$color-principal
+            }
+          }
+        .btn-success{
+            background-color:$color-principal;
+            border:$border-principal;
+
+            &:hover{
+                background-color:$color-principal;
+                border:$border-principal
+            }
+            &:active{
+                background-color:$color-principal;
+                border: $border-principal
+            }
+          }
+    }
+  }

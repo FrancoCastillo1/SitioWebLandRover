@@ -1,0 +1,164 @@
+@media screen and (max-width: 320px) {
+    /*Header */
+    .encabezado_logo img {
+      width: 40px;
+    }
+    /*Footer */
+    .footer {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 10px;
+      justify-items: center;
+      padding: 5px;
+
+    .footer h3 {
+        font-size: 1.3rem;
+        color: rgb(9, 85, 9);
+      }
+
+    .footerLeft li {
+        margin: 10px;
+        padding: 10px;
+
+        .footer__facebook ,
+        .footer__instagram ,
+        .footer__linkedin{
+        font-size: 1.4rem;
+        padding: 8px;
+        }
+      }
+    .footerRightMedium{
+        border-top: $border-principal;
+      }
+    .footerCopyright {
+        grid-column: 1/2;
+     }
+    #ResponsiveArriba{
+        margin-bottom: 25px; /*esperemos que sea footer */
+        margin-right: 20px;
+      }
+    }
+    /*Index */
+    .encabezado_principal {
+      height: 450px;
+      background-position: center;
+    }
+     .cuerpo_secciones {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px;
+      background-color: white;
+      margin-top: 50px;
+      margin-bottom: 30px;
+
+    .seccionContenido {
+        justify-content: space-around;
+        width: 100%;
+        height: 300px;
+
+        p {
+            margin: 30px 0 30px 0;
+          }
+        h2 {
+            margin: 50px 5px 20px 0;
+          }
+       }
+        .seccionesIndexImagen,
+        .seccionesIndexImagen--2{
+            display: none;
+        }
+    }
+    .conocenosIndex{
+      height: 350px;
+      width: 95vw;
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: repeat(2 ,1fr);
+
+      .divleftIndex1{
+        justify-content: none;
+        width: 100%;
+        height: 100%;
+   
+            p , h2{         
+            padding: 14px;
+            font-size: 0.9rem; 
+            } 
+            h2{
+                font-size: 1.1rem;
+            }
+       }
+      .divRightIndex{
+        flex-direction: row;
+        width: 100%;
+        height:100% ;
+        align-items: flex-end;
+       }
+    } 
+    /*Preguntas Frecuentes */
+    .sectionPreguntasFrecuentes{
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: repeat(10 , 270px);
+
+      &.divContainerPreguntasFrecuentesBottom{
+        grid-column: 1/2;
+      }
+    }
+    
+    /*Sobre nosotros servicios */
+    .serviciosContainer{
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: repeat(4 ,1fr);
+
+      div{
+        flex-direction: column;
+        grid-column: 1/2;
+      }
+      .divLeft{
+        width: 100%;
+    }
+      .serviciosCursos{
+        grid-row: 4/5;
+        grid-column: 1/2;
+        display: block;
+      }
+    }
+    /*Contacto */
+    .contacto {
+      width: 85%;
+      border: 2px solid rgb(23, 105, 6);
+      height: 530px;
+
+      .contactoImagen {
+        display: none;
+      }
+      .contactoRight {
+        width: 100%;
+      }
+    }
+    /* Turnos */
+    .seccionTurnos{
+
+        #carouselExampleSlidesOnly{
+            display: none;
+          }
+        form {
+            font-size: 1.1rem;
+            width: 95%;
+      
+            div {
+              margin: 15px 0;
+      
+              input {
+                  margin-left: 5px;
+                }
+            }
+            .botonTurnos{
+              input {
+                  width: 150px;
+                  margin-right: 15px;
+                } 
+            }
+        }
+    } 
+  }
+ 

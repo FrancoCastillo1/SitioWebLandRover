@@ -1,0 +1,19 @@
+/*variables generales */
+$color-principal:rgb(23, 105, 6);
+$border-principal:1px solid $color-principal;
+$coloresSecundarios:( 
+    "$color-secundario1":#198754,
+
+);
+/*variables-especificas */
+@mixin flexboxColumnAround {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@mixin flexboxCenterCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
