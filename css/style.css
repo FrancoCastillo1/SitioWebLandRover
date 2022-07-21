@@ -136,6 +136,9 @@ header {
   grid-row-gap: 5px;
   grid-template-rows: 300px; }
   .cuerpo_secciones .seccionContenido {
+    /*  display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
@@ -178,6 +181,9 @@ header {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 20px; }
   .conocenosIndex .divleftIndex1 {
+    /* display: flex;
+        flex-direction: column;
+        justify-content: space-around; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -401,21 +407,33 @@ header {
     font-size: 1.5rem;
     padding: 5px;
     color: #176906; }
-  .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
-  .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom {
+  .sectionPreguntasFrecuentes.divContainerPreguntasFrecuentesBottom {
     grid-column: 1/4;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom h2 {
+    .sectionPreguntasFrecuentes.divContainerPreguntasFrecuentesBottom h2 {
       font-size: 1.7rem; }
-    .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentesBottom p {
+    .sectionPreguntasFrecuentes.divContainerPreguntasFrecuentesBottom p {
       font-size: 1.1rem; }
+  .sectionPreguntasFrecuentes .divContainerPreguntasFrecuentes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
 
+/* .divContainerPreguntasFrecuentesBottom{
+    grid-column: 1/4;
+    text-align: center;
+   @include flexboxColumnAround();
+
+   h2{
+    font-size: 1.7rem;
+   }
+   p{
+    font-size: 1.1rem;
+   }
+  } */
 .contactoEncabezado {
   width: 100%;
   height: 250px;
@@ -486,7 +504,7 @@ header {
             outline: 1px solid #2b2beb; }
       .contacto .contactoRight .formFlex .contactoInputButtom {
         width: 100%;
-        margin-top: 30px; }
+        margin-top: 10px; }
         .contacto .contactoRight .formFlex .contactoInputButtom input {
           background-color: #145707;
           height: 40px;
@@ -495,23 +513,191 @@ header {
           .contacto .contactoRight .formFlex .contactoInputButtom input:active {
             background-color: #42693a; }
 
-/* 
-  .formFlex .contactoInputNoButtom:focus {
-    color: rgb(23, 105, 6);
-    background-color: #ecf3f7;
-  }
-  .formFlex .contactoMensaje textarea:focus {
-    color: rgb(23, 105, 6);
-    background-color: #ecf3f7;
-    outline: 1px solid rgb(43, 43, 235);
-  }
-  .formFlex .contactoInputButtom input:active {
-    background-color: rgb(66, 105, 58);
-  } */
+.serviciosContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(3, 300px); }
+  .serviciosContainer div {
+    display: flex;
+    margin-top: 15px; }
+    .serviciosContainer div .iconRight {
+      display: flex;
+      width: 40%;
+      height: 100%;
+      justify-content: center;
+      align-items: center; }
+  .serviciosContainer .serviciosArreglo {
+    grid-column: 1/5;
+    margin-left: 15px;
+    background-color: #042697;
+    border-radius: 5%;
+    color: white; }
+    .serviciosContainer .serviciosArreglo .divLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%;
+      height: 100%;
+      padding: 20px; }
+  .serviciosContainer .serviciosTuneo {
+    grid-column: 4/8;
+    margin-right: 15px;
+    background: #176906;
+    border-radius: 5%;
+    color: white; }
+    .serviciosContainer .serviciosTuneo .divLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%;
+      height: 100%;
+      padding: 20px; }
+  .serviciosContainer .serviciosCursos {
+    grid-column: 2/4;
+    padding: 15px;
+    grid-row: 3/4;
+    height: 90%;
+    font-size: 0.8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #042697;
+    color: white;
+    border-radius: 5%; }
+    .serviciosContainer .serviciosCursos .divTop {
+      height: 75%;
+      width: 100%;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      font-size: 0.9rem;
+      overflow: hidden; }
+    .serviciosContainer .serviciosCursos .iconButton {
+      height: 25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .serviciosContainer .serviciosVende {
+    grid-column: 5/7;
+    padding: 15px;
+    grid-row: 3/4;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #176906;
+    color: white;
+    border-radius: 5%; }
+    .serviciosContainer .serviciosVende .divTop {
+      height: 75%;
+      width: 100%;
+      display: flex;
+      color: white;
+      flex-direction: column;
+      font-size: 0.9rem;
+      overflow: hidden; }
+    .serviciosContainer .serviciosVende .iconButton {
+      height: 25%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/* .serviciosContainer{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(3 , 300px);
+   }
+   .serviciosContainer div{
+     display: flex;
+     margin-top:15px;
+   }
+   .serviciosContainer .divLeft {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around; 
+     width: 60%;
+     height: 100%;
+     padding: 20px;
+   }
+   .serviciosContainer div .iconRight {
+       display: flex;
+       width: 40%;
+       height: 100%;
+       justify-content: center;
+        align-items: center;
+   }
+   .serviciosContainer div div i{
+     font-size: 2.5rem;
+   }
+   .serviciosArreglo{
+     grid-column: 1/5;
+     margin-left:15px ;
+     background-color:rgb(4, 38, 151);
+     border-radius: 5%;
+     color:white
+   }
+   .serviciosTuneo{
+     grid-column: 4/8 ;
+     margin-right: 15px;
+     background: rgb(23, 105, 6);
+     border-radius: 5%;
+     color:white
+   }
+   .serviciosCursos{
+     grid-column: 2/4;
+     padding: 15px;
+     grid-row: 3/4;
+     height: 90%;
+     font-size: 0.8rem;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     background-color:rgb(4, 38, 151); 
+     color:white;
+     border-radius: 5%;
+   }
+   .serviciosVende{
+     grid-column: 5/7;
+     padding: 15px;
+     grid-row: 3/4;
+     height: 90%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     background-color:rgb(23, 105, 6); ;
+     color:white;
+     border-radius: 5%;
+   }
+   .serviciosCursos .divTop ,
+   .serviciosVende .divTop{
+      height: 75%;
+      width: 100%;
+      display: flex;
+      color:white;
+      flex-direction: column;
+      font-size: 0.9rem;
+      overflow: hidden;
+   }
+   .serviciosArreglo .divLeft p ,
+   .serviciosTuneo .divLeft p ,
+   .serviciosCursos .divTop p ,
+   .serviciosVende .divTop p{
+     color:rgb(255, 238, 238);
+   }
+   .serviciosCursos .iconButton ,
+   .serviciosVende .iconButton{
+     height: 25%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   } */
 @media screen and (max-width: 320px) {
   /*Header */
   .encabezado_logo img {
-    width: 90%; }
+    width: 40px; }
   /*Footer */
   .footer {
     grid-template-columns: repeat(1, 1fr);
@@ -582,9 +768,9 @@ header {
   /*Preguntas Frecuentes */
   .sectionPreguntasFrecuentes {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 270px); }
-  .divContainerPreguntasFrecuentesBottom {
-    grid-column: 1/2; }
+    grid-template-rows: repeat(10, 270px); }
+    .sectionPreguntasFrecuentes.divContainerPreguntasFrecuentesBottom {
+      grid-column: 1/2; }
   /*Sobre nosotros servicios */
   .serviciosContainer {
     grid-template-columns: repeat(1, 1fr);
