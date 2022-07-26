@@ -3,15 +3,27 @@ $color-principal:rgb(23, 105, 6);
 $border-principal:1px solid $color-principal;
 $coloresSecundarios:( 
     "$color-secundario1":#198754,
-
+    "$colorFuenteSecundario":white,
 );
 /*variables-especificas */
-@mixin flexboxColumnAround {
+@mixin flexboxColumnJustify($justify){
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-@mixin flexboxCenterCenter {
+    justify-content: $justify;
+};
+@mixin backgrounImage($imagenFondo) {
+    /* background{
+       image:$imagenFondo;
+        repeat:no-repeat;
+        position: center;
+        size: cover
+    };  */
+    background-image:$imagenFondo;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+};
+%flexboxCenterCenter {
     display: flex;
     justify-content: center;
     align-items: center;

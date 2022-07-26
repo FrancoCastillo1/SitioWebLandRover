@@ -8,7 +8,7 @@
     
     h2 {
         font-size: 2.8rem;
-        color: white;
+        color: map-get($coloresSecundarios , "$colorFuenteSecundario" );
         position: absolute;
         bottom: 0;
         margin-left: 15px;
@@ -27,7 +27,7 @@
        /*  display: flex;
         flex-direction: column;
         justify-content: space-around; */
-        @include flexboxColumnAround();
+        @include flexboxColumnJustify(space-around);
 
         h2{
             color: $color-principal;
@@ -49,17 +49,19 @@
           }
       }
     .seccionesIndexImagen {
-        background-image: url(../Imagenes-html/sub-imagen.jpeg);
+        /* background-image: url(../Imagenes-html/sub-imagen.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center; */
+        @include backgrounImage(url("../Imagenes-html/sub-imagen.jpeg"));
         width: 90%;
     }
     .seccionesIndexImagen--2 {
-        background-image: url(../Imagenes-html/sub-imagen-2.jpeg);
+      /*   background-image: url(../Imagenes-html/sub-imagen-2.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center; */
+        @include backgrounImage(url(../Imagenes-html/sub-imagen-2.jpeg));
         order:1;
         justify-self: flex-end;
         width:90%
@@ -69,7 +71,7 @@
     width: 80vw;
     margin: 0px auto;
     height: 350px;
-    border-radius: 4%;
+    border-radius: 5%;
     background-color:$color-principal;
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
@@ -79,34 +81,35 @@
         /* display: flex;
         flex-direction: column;
         justify-content: space-around; */
-        @include flexboxColumnAround();
+        @include flexboxColumnJustify(space-around);
         height: 100%;
         width: 100%;
 
         p , h2 { 
-        color:white;    /*problema a arreglar */     
+        color:map-get($coloresSecundarios ,"$colorFuenteSecundario");;    /*problema a arreglar */     
         padding: 20px;
         }
     }
      .divRightIndex{
-        @include flexboxColumnAround();
+        @include flexboxColumnJustify(space-around);
         align-items: center;
         height: 100%;
         width: 100%;
 
         i{
             font-size: 2.5rem;
-            color:white
+            color:map-get($coloresSecundarios ,"$colorFuenteSecundario");
         }
         button{
             background-color: #0072b1;
-            color:white;
-            height: 40px;
-            width: 100px;
-            border-radius: 20px;
+            color:map-get($coloresSecundarios ,"$colorFuenteSecundario");
+            padding: 10px;
+            /* height: 40px;
+            width: 100px; */
+            border-radius: 10px;
         }
     }
-}
+  }
 .seccionNuestrosClientes{
     height: 400px;
     width: 85vw;
@@ -123,12 +126,10 @@
            div {
             width: 300px;
             height: 360px;
-           display: flex;
-           flex-direction: column;
+            @include flexboxColumnJustify(space-evenly);
            align-items: center;
            border: 1px solid rgb(16, 94, 16);
            border-radius: 3%;
-           justify-content: space-evenly;
           p{
             font-size:0.9rem;
             padding: 15px;

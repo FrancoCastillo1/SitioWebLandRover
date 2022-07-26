@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestras Sucursales</title>
+    <title>LandRover |Nuestras Sucursales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Slab:wght@300&display=swap"
       rel="stylesheet"
     />
+    <meta name="keywoards" content="taller mecanico , talleres , LandRover, cursos mecanico ,arreglo de autos , mejora de autos , tuneo , vender auto , tuneo barato ,arrgelo de autos baratos">
+    <meta name="description" content="Pagina de todas las Sucursales de LandRover,aca nos podes encontrar 😆​ ">
     <script src="https://kit.fontawesome.com/27a566e2ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -43,7 +45,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="nosotrosServicios.html">Servicios</a></li>
-                    <li><a class="dropdown-item" href="nosotrsoEmpresa.html">Nuestra Historia</a></li>
+                    <li><a class="dropdown-item" href="nosotrosEmpresa.html">Nuestra Historia</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -77,8 +79,8 @@
             </div>
             <img src="../Imagenes-html/imagenSucursales.jfif" alt="">
         </section>
-        <h1 class="h1Sucursales" data-aos="fade-down" >Donde Trabajamos</h1>
-        <section class="cardSucursales">
+        <h1 class="h1Sucursales">Donde Trabajamos</h1>
+        <section class="cardSucursales container-fluid">
           <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
           <div class="card" style="width: 18rem;" >
             <iframe
@@ -217,13 +219,13 @@
         <h3>Sobre nosotros</h3>
         <ul>
           <li>
-            <a href="https://www.facebook.com/Landroverargentina/" target="_blank"  class="footerNosotros">Nuestra empresa</a>
+            <a href="nosotrosEmpresa.html" target="_blank"  class="footerNosotros">Nuestra empresa</a>
           </li>
           <li>
-            <a href="https://www.instagram.com/landrover/?hl=es" target="_blank" class="footerNosotros">Trabaja con nosotros</a>
+            <a href="https://www.linkedin.com/company/jaguar-land-rover_1/jobs?trk=nav_type_jobs" target="_blank" class="footerNosotros">Trabaja con nosotros</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/showcase/land-rover-global" target="_blank" class="footerNosotros"
+            <a href="https://play.google.com/store/apps/details?id=com.s4m.lrmena" target="_blank" class="footerNosotros"
               >Nuestra Aplicacion!</a>
           </li>
         </ul>
@@ -231,10 +233,101 @@
         <div class="footerRightMedium">
           <h3>Condiciones</h3>
           <ul>
-            <li>
-              <a href="https://www.facebook.com/Landroverargentina/" target="_blank" class="footerNosotros">Terminos&Condiciones</a>
+            <li class="BtnBoostrap">
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Terminos&Condiciones
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header modalTerminos">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body divTerminosContainer ">
+                      <div class="row">
+                        <div class="col-4 divLeft">
+                          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                            <nav class="nav nav-pills flex-column">
+                              <a href="#itemGeneral">Terminos&Condiciones</a>
+                              <a class="nav-link" href="#item-1">Informacion General Nuestra Empresa</a>
+                              <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-1-1">Artículo 1-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-1-2">Artículo 1-2</a>
+                              </nav>
+                              <a class="nav-link" href="#item-2">Condiciones de uso del sitio web</a>
+                              <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-2-1">Artículo 2-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-2">Artículo 2-2</a>
+                              </nav>
+                              <a class="nav-link" href="#item-3">Defensa Del Consumidor</a>
+                              <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Artículo 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Artículo 3-2</a>
+                              </nav>
+                              <a class="nav-link" href="#item-4">CopyRight</a>
+                            </nav>
+                          </nav>
+                        </div>
+                        <div class="col-8 divRightTerminos">
+                          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2  " tabindex="0">
+                            <div id="itemGeneral">
+                              <h4>Terminos&Condiciones</h4>
+                              <p>Esta sección brinda información sobre los términos y condiciones legales que pueden aplicarse a su uso de LandRover.com (el "Sitio web" o los "Sitios web").Es importante leer los Terminos&Condiciones de este sitio para evitar inconvenientes.</p>
+                            </div>
+                            <div id="item-1">
+                             <h4>Información general sobre nuestra empresa </h4>  
+                             <p>Este sitio web es propiedad y está operado por LandRover , una empresa registrada en Argentina (número de empresa registrada 1672070) cuya dirección registrada es Guaymayen,Dorrego Dirección:Tucumaán 2838. Nuestro número de IVA es GB927153228.</p>
+                            </div>
+                            <div id="item-1-1">
+                              <h5>Artículo 1-1</h5>
+                              <p> se debe respetar Global-E es nuestro socio internacional de facilitación y cumplimiento de ventas y es la empresa con la que contratará cualquier pedido de servicios por medio de la sección turnos de neustro sitio web.</p>
+                            </div>
+                            <div id="item-1-2">
+                              <h5>Artículo 1-2</h5>
+                              <p>Se actualizará y se le hará noticarr que los terminos y condiciones de esta empresa se actulizaron en caso que usted sea un cliente de interes para nuestra empresa LandRover</p>
+                            </div>
+                            <div id="item-2">
+                              <h4>Condiciones de uso del sitio web</h4>
+                              <p>Al acceder, navegar, usar, registrarse o realizar un pedido en el sitio web, usted confirma que ha leído, entendido y está de acuerdo con estos Términos y condiciones en su totalidad. Si no está de acuerdo con estos Términos y condiciones en su totalidad, no use este sitio web.</p>
+                            </div>
+                            <div id="item-2-1">
+                              <h5>Artículo 2-1</h5>
+                              <p>Estos Términos y condiciones se regirán e interpretarán de conformidad con las leyes de la Republica Argentina. Las disputas que surjan aquí estarán sujetas exclusivamente a la jurisdicción de los tribunales de la Republica Argentina. Si se determinara que alguno de estos Términos es ilegal, inválido o de otro modo inaplicable debido a las leyes de cualquier estado o país en el que se pretenda que estos Términos sean efectivos, se eliminará y eliminará de esta cláusula. Todos los demás Términos de uso y Términos y condiciones permanecerán en pleno vigor y seguirán siendo vinculantes y exigibles.LandRover se reserva el derecho de cambiar cualquiera de sus términos y condiciones en cualquier momento publicando los cambios en línea.</p>
+                            </div>
+                            <div id="item-2-2">
+                              <h5>Artículo 2-2</h5>
+                              <p>Nos reservamos el derecho de cambiar las especificaciones, los colores y los precios de los productos ilustrados y descritos en nuestro sitio web en cualquier momento.</p>
+                            </div>
+                            <div id="item-3">
+                              <h4>Defensa del consumidor</h4>
+                              <p>Usted , como consumidor final está dispuesto recibir y aceptar nuestros servicios.Nuestros Servicios incluyen tuneo y arreglo de vehiculos.Si usted como consumidor , teien algún problema,completa <a href="#">Nuestro Formulario</a> o reclame enla sucursal valida.</p>
+                            </div>
+                            <div id="item-3-1">
+                              <h5>Artículo 3-1</h5>
+                              <p>Citamos especialemnte al articulo 9-5 de la Defensa del Consumidor , donde la empresa no es responsable de los perjuicios que el consumidor provoque a algunos de nuestros servicios.Si LandRover es responsable de algun  daño hacia su medio de transporte,será nuestra responsabidad hacernos cargo</p>
+                            </div>
+                            <div id="item-3-2">
+                              <h5>Artículo 3-2</h5>
+                              <p>La empresa mecánica LandRover se compromete a hacer el servicio con el plazo solicitado, en caso de que usted&ustedes tenga algun problema con el plazo , debe comunicarse por el servicio tecnico llenando el formulario correspondiente.</p>
+                            </div>
+                            <div id="item-4">
+                              <h4>CopyRight</h4>
+                              <p>Nos reservamos de demandar a cualquer individuo u organizacion que esté intentando o haya efectuado un acto de plagio hacia nuestra compañia LandRover</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer modal-Terminos">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-success">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="cookiesBoostrap">
+            <li class="BtnBoostrap">
               <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Cookies
               </button>
@@ -266,12 +359,17 @@
               </div>
           </li>
             <li>
-              <a href="https://www.linkedin.com/showcase/land-rover-global" target="_blank" class="footerNosotros">Reclamos</a>
+            <a href="https://hdiseguros.com.ar/wp-content/uploads/2021/12/Denuncia_de_Accidentes_de_Terceros.pdf" target="_blank" class="footerNosotros">Reclamos</a> 
+              </h4>
             </li>
           </ul>
         </div>
         <div class="footerCopyright">
-          <h4><i class="fas fa-copyright"></i>Derechos Reservados LandRover</h4>
+          <h4><i class="fas fa-copyright"></i>Derechos Reservados LandRover
+            <div>
+              <h5>Cualquier intento de plagio será demandado segun nuestros T&C</h5>
+            </div>
+          </h4>
         </div>
       </footer>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

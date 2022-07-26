@@ -1,7 +1,11 @@
 @media screen and (max-width: 320px) {
     /*Header */
     .encabezado_logo img {
-      width: 40px;
+      width: 70%;
+    }
+    .navbar-toggler{
+      position: relative;
+      left: 240px;
     }
     /*Footer */
     .footer {
@@ -29,9 +33,43 @@
       }
     .footerRightMedium{
         border-top: $border-principal;
+        .BtnBoostrap{
+          .divTerminosContainer{
+            margin: 0 auto;
+            position: relative;
+            left: 20px;
+            padding: 20px;
+            width: 70%;
+            font-size: 1.1rem;
+            .divRightTerminos{
+              padding: 5px;
+              width: 100%;
+              font-size: 1.1rem;
+            }
+            .divLeft{
+              padding-bottom: 10px;
+               border-bottom: 3px solid $color-principal; 
+               width: 100%;
+            }
+          }
+          .modal-Terminos{
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            left: 20px;
+          }
+        }
       }
     .footerCopyright {
         grid-column: 1/2;
+        h4{
+          div{
+            width: 300px;
+            height: 80px;
+            /* padding: px; */
+            top:60px
+          }
+        }
      }
     #ResponsiveArriba{
         margin-bottom: 25px; /*esperemos que sea footer */
@@ -99,34 +137,38 @@
       grid-template-columns: repeat(1 ,1fr);
       grid-template-rows: repeat(10 , 270px);
 
-      &.divContainerPreguntasFrecuentesBottom{
+      .divContainerPreguntasFrecuentesBottom{
         grid-column: 1/2;
-      }
+        grid-template-rows: 4/5;
+      } 
     }
     
     /*Sobre nosotros servicios */
     .serviciosContainer{
-      grid-template-columns: repeat(1 ,1fr);
-      grid-template-rows: repeat(4 ,1fr);
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: repeat(4 ,auto);
 
-      div{
+      .serviciosArreglo ,  .serviciosTuneo , .serviciosVende{ 
+       /*  height: fit-content; */
         flex-direction: column;
         grid-column: 1/2;
+        .divLeft{
+          width: 100%;
+        }
       }
-      .divLeft{
-        width: 100%;
-    }
       .serviciosCursos{
         grid-row: 4/5;
         grid-column: 1/2;
         display: block;
       }
-    }
+    }   /* .serviciosArreglo  .serviciosTuneo .serviciosVende*/
     /*Contacto */
     .contacto {
       width: 85%;
+      padding: 10px;
       border: 2px solid rgb(23, 105, 6);
-      height: 530px;
+      border-radius: 3%;
+      height: 570px;
 
       .contactoImagen {
         display: none;
@@ -160,5 +202,4 @@
             }
         }
     } 
-  }
- 
+  } 

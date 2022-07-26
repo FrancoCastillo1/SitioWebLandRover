@@ -4,9 +4,9 @@
     height: 250px;
 
     .encontranosDivSucursales{
-        @include flexboxCenterCenter();
+        @extend %flexboxCenterCenter;
         font-size: 1.4rem;
-        color:white;
+        color:map-get($coloresSecundarios , "$colorFuenteSecundario");
         width: 50%;
         background-color: map-get($coloresSecundarios , "$color-secundario1");
     }
@@ -18,8 +18,8 @@
     text-decoration: overline;
 }
 .cardSucursales{
-    width: 96vw;
-    margin: 10px auto 0px auto;
+   /*  width: 96vw;
+    margin: 10px auto 0px auto; */
 
     .row{
         .card{
