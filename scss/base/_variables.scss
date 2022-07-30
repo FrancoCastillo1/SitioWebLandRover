@@ -1,5 +1,9 @@
 /*variables generales */
 $color-principal:rgb(23, 105, 6);
+$coloresNavs:(
+    colorNavItems:rgb(7, 133, 7) ,
+    colorFondoNav:rgb(207, 212, 202),
+);
 $border-principal:1px solid $color-principal;
 $coloresSecundarios:( 
     "$color-secundario1":#198754,
@@ -23,9 +27,15 @@ $coloresSecundarios:(
     background-position: center;
     background-repeat: no-repeat
 };
-%flexboxCenterCenter {
+@mixin contrastePrincipal($padding) {
+    background-color: $color-principal;
+    color:map-get($coloresSecundarios , "$colorFuenteSecundario" );
+    padding:$padding;
+};
+%flexboxCenterCenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 

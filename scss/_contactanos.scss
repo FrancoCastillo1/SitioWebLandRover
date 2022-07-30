@@ -4,10 +4,8 @@
     @include backgrounImage(url(../Imagenes-html/personatrabajando_PF.jpg));
     @extend %flexboxCenterCenter;
 
-    h2 {
-      color: rgb(32, 107, 9);
-      background-color: black;
-      padding: 10px;
+    h1 {
+      @include contrastePrincipal(10px);
       font-size: 2.1rem;
       }
   }
@@ -22,18 +20,12 @@
 
    .contactoImagen {
         width: 50%;
-        /* height: 80%;  */
-        /* padding: 20px; */
         @extend %flexboxCenterCenter;
-        /* background-image: url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; */
         @include backgrounImage(url(../Imagenes-html/imagen-principal-coderhouse-HTML.jpg));
         text-align: center;
 
         h2 {
-            color: white;
+            color: map-get($coloresSecundarios , "$colorFuenteSecundario" );
           }
       }
     .contactoRight {

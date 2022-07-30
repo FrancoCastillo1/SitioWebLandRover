@@ -1,205 +1,566 @@
-@media screen and (max-width: 320px) {
-    /*Header */
+@media screen  and (max-width:789px){
+  /* footer */ 
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+    padding: 5px;
+
+  .footer h3 {
+      font-size: 1.3rem;
+      color: rgb(9, 85, 9);
+    }
+
+  .footerLeft li {
+      margin: 10px;
+      padding: 10px;
+
+      .footer__facebook ,
+      .footer__instagram ,
+      .footer__linkedin{
+      font-size: 1.4rem;
+      padding: 8px;
+      }
+    }
+  .footerRightMedium{
+      border-top: $border-principal;
+      .BtnBoostrap{
+        .divTerminosContainer{
+          margin: 0 auto;
+          position: relative;
+          left: 20px;
+          padding: 20px;
+          width: 90%;
+          font-size: 1.1rem;
+          .divRightTerminos{
+            padding: 5px;
+           /*  width: 100%; */
+            font-size: 1.1rem;
+          }
+          .divLeft{
+            display: none;
+           /*  overflow-x: scroll; */
+           /*  padding-bottom: 10px; */
+             border-right: 2px solid $color-principal; 
+             /* width: 100%; */
+          }
+        }
+        .modal-Terminos{
+          width: 90%;
+          margin: 0 auto;
+          position: relative;
+          left: 20px;
+        }
+    }
+  }
+  .footerCopyright {
+      grid-column: 1/2;
+      h4{
+        div{
+          width: 300px;
+          height: 80px;
+          /* padding: px; */
+          top:60px
+        }
+      }
+   }
+  #ResponsiveArriba{
+      margin-bottom: 25px; /*esperemos que sea footer */
+      margin-right: 20px;
+    }
+  }
+  /*preguntas Frecuentes */
+  .sectionPreguntasFrecuentes{
+      /*  padding:20px; */
+       grid-template-columns: repeat(2 ,50%);
+       grid-template-rows: repeat(5 ,450px);
+       .divContainerPreguntasFrecuentesBottom{
+         grid-column: 1/3;
+         grid-template-rows: 5/6;
+       }
+       h2{
+         font-size: 1.5rem;
+       }
+       p{
+         font-size: 1.3rem;
+       } 
+     }
+  /*Turnos */
+  .seccionTurnos{
+    flex-direction: column;
+    #carouselExampleSlidesOnly .carousel-inner{ 
+      width: 390px;
+      height: 210px;
+      margin:10px;
+    }
+    form {
+        font-size: 1.2rem;
+        width: 95%;
+  
+        div {
+          margin: 15px 0;
+  
+          input {
+              margin-left: 5px;
+            }
+        }
+        .botonTurnos{
+          input {
+              width: 160px;
+              margin-right: 15px;
+            } 
+        }
+    }
+}
+          /*galeria */
+    .galeriaImagenes{
+       .containerGaleria{
+        grid-template-columns: repeat(3,1fr);
+       }
+    }        
+  /*Contacto */
+  .contacto {
+    width: 85%;
+    padding: 10px;
+    border: 2px solid rgb(23, 105, 6);
+    border-radius: 3%;
+    height: 570px;
+    .contactoRight {
+      width: 70%;
+    }
+  }
+  /*Index */
+  .encabezado_principal {
+    height: 450px;
+    background-position: center;
+  }
+   .cuerpo_secciones {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+  .seccionContenido {
+      justify-content: space-around;
+      width: 100%;
+      height: 300px;
+
+      p {
+          margin: 30px 0 30px 0;
+        }
+      h2 {
+          margin:30px 5px 20px 0;
+        }
+     }
+      .seccionesIndexImagen,
+      .seccionesIndexImagen--2{
+          display: none;
+      }
+  }
+  .conocenosIndex{
+    height: 380px;
+    width: 95vw;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-template-rows: repeat(2 ,1fr);
+
+    .divleftIndex1{
+      justify-content: none;
+      width: 100%;
+      height: 100%;
+           
+          p{         
+          padding: 14px;
+          font-size: 1.2rem; 
+          } 
+          h2{
+              font-size: 1.4rem;
+          }
+     }
+    .divRightIndex{
+      flex-direction: row;
+      width: 100%;
+      height:100% ;
+      align-items: center;
+     }
+  }
+  .seccionNuestrosClientes{
+    height: 400px;
+    width: 99vw;
+    margin: 25px auto 0px auto;
+
+    h2{
+        font-size: 1.5rem;
+        /* color:rgb(163, 109, 8); */
+      }
+    #carouselExampleFade .carousel-inner .carousel-item{
+        /* display: grid; */
+        grid-template-columns: repeat(2 ,1fr);
+        gap:10px;
+       /*  overflow-y: hidden;
+        overflow-x: hidden; */
+        grid-template-rows: 360px;
+        div{
+          width: 245px;
+        }
+      div:last-child{
+      display: none;
+    }
+}
+}
+/*servicios */
+  .serviciosContainer{
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(3 , 440px);
+    h2{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+        .iconRight {
+            width: 30%;
+            font-size: 2.0rem;
+            height: 100%;
+        }
+    .serviciosArreglo{
+          grid-column: 1/7;
+          .divLeft {
+              width: 70%;
+          }
+        }     
+  .serviciosTuneo{
+        grid-column: 2/8 ;
+        .divLeft {
+            width: 75%;
+        } 
+      }                                      
+      .serviciosCursos{
+        grid-column: 1/4;
+    
+        .divTop{
+            height: 75%;
+        }
+      }                            
+      .serviciosVende{
+        grid-column: 5/8;
+            .divTop{
+                height: 75%;
+            }
+      }
+    }
+} 
+
+@media screen and (max-width: 485px) {
+  /*header */
+  header{
+    /* width: 100vw; */
     .encabezado_logo img {
       width: 70%;
     }
-    .navbar-toggler{
-      position: relative;
-      left: 240px;
-    }
-    /*Footer */
-    .footer {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-row-gap: 10px;
-      justify-items: center;
-      padding: 5px;
-
-    .footer h3 {
-        font-size: 1.3rem;
-        color: rgb(9, 85, 9);
-      }
-
-    .footerLeft li {
-        margin: 10px;
-        padding: 10px;
-
-        .footer__facebook ,
-        .footer__instagram ,
-        .footer__linkedin{
-        font-size: 1.4rem;
-        padding: 8px;
+  }
+  /*footer */
+  .footerRightMedium{
+    border-top: $border-principal;
+    .BtnBoostrap{
+      .divTerminosContainer{
+        margin: 0 auto;
+        position: relative;
+        left: 20px;
+        padding: 20px;
+        width: 90%;
+        font-size: 1.1rem;
+        .divRightTerminos{
+          padding: 5px;
+          width: 100%;
+          font-size: 1.1rem;
+        }
+        .divLeft{
+          padding-bottom: 10px;
+           border-bottom: 2px solid $color-principal; 
+           width: 100%;
         }
       }
-    .footerRightMedium{
-        border-top: $border-principal;
-        .BtnBoostrap{
-          .divTerminosContainer{
-            margin: 0 auto;
-            position: relative;
-            left: 20px;
-            padding: 20px;
-            width: 70%;
-            font-size: 1.1rem;
-            .divRightTerminos{
-              padding: 5px;
-              width: 100%;
-              font-size: 1.1rem;
-            }
-            .divLeft{
-              padding-bottom: 10px;
-               border-bottom: 3px solid $color-principal; 
-               width: 100%;
-            }
-          }
-          .modal-Terminos{
-            width: 90%;
-            margin: 0 auto;
-            position: relative;
-            left: 20px;
-          }
-        }
+      .modal-Terminos{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        left: 20px;
       }
-    .footerCopyright {
+  }
+}
+ /*galeria */
+ .imgAncha , .imgExtraAncha ,.imgExtraLarga , .imgLarga{
+  img{
+      &:hover{
+          transform: scale(1);
+      }
+  }
+}
+  /*preguntas Frecuentes */
+   /*  padding: 0px 20px 0px 20px; */
+    .sectionPreguntasFrecuentes{
+      padding:20px;
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: repeat(9 , 370px);
+  
+      .divContainerPreguntasFrecuentesBottom{
         grid-column: 1/2;
-        h4{
-          div{
-            width: 300px;
-            height: 80px;
-            /* padding: px; */
-            top:60px
-          }
+        grid-template-rows: 9/10;
+      }
+      h2{
+        font-size: 1.6rem;
+      }
+      p{
+        font-size: 1.2rem;
+      } 
+    }
+  /*Sucursales */ 
+ /*  .cardSucursales{
+    width: 100vw;
+    .row{
+      width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       div{
+        margin-top:15px ;
+       }
+    }
+  } */
+  /*Index */
+  .encabezado_principal {
+    height: 450px;
+    background-position: center;
+  }
+   .cuerpo_secciones {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+  .seccionContenido {
+      justify-content: space-around;
+      width: 100%;
+      height: 300px;
+
+      p {
+          margin: 30px 0 30px 0;
+        }
+      h2 {
+          margin:30px 5px 20px 0;
         }
      }
-    #ResponsiveArriba{
-        margin-bottom: 25px; /*esperemos que sea footer */
-        margin-right: 20px;
+      .seccionesIndexImagen,
+      .seccionesIndexImagen--2{
+          display: none;
+      }
+  }
+  .conocenosIndex{
+    height: 450px;
+    width: 95vw;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-template-rows: repeat(2 ,1fr);
+
+    .divleftIndex1{
+      justify-content: none;
+      padding: 8px;
+      width: 100%;
+      height: 100%;
+           
+          p{         
+          padding: 14px;
+          font-size: 1.2rem; 
+          } 
+          h2{
+              font-size: 1.4rem;
+          }
+     }
+    .divRightIndex{
+      flex-direction: row;
+      width: 100%;
+      height:100% ;
+      align-items: center;
+     }
+  }
+ /*  .seccionNuestrosClientes{
+    display: none;
+  } */
+  /* .seccionNuestrosClientesMobile{
+    display:block;
+    height: 400px;
+    width: 80vw;
+    margin: 25px auto 20px auto;
+
+  h2{
+      font-size: 1.4rem;
+      color:rgb(16, 94, 16);
+    }
+  #carouselExampleFade .carousel-inner{
+    display: grid;
+    grid-template-columns:260px; 
+    grid-template-rows: 360px;
+    .carousel-item{
+     /*  width: 260px;
+      height: 360px; */
+      /* @include flexboxColumnJustify(space-evenly);
+      align-items: center;
+      border: 1px solid rgb(16, 94, 16);
+      border-radius: 3%;
+          p{
+            font-size:1.1rem;
+            padding: 15px;
+            color:$color-principal;
+          }
+          h3{
+            font-size:1.2rem;
+            color:black
+          }
+          i{
+            color:rgb(43, 43, 201)
+          } 
+          img{
+            width: 80px;
+            border-radius: 50%;
+            height: 80px;
+          }
+        }
+      } 
+    } */
+    .seccionNuestrosClientes{
+      height: 450px;
+      width: 77vw;
+      margin: 25px auto 10px auto;
+  
+      h2{
+          font-size: 1.5rem;
+          /* color:rgb(163, 109, 8); */
+        }
+      #carouselExampleFade .carousel-inner .carousel-item{
+          /* display: grid; */
+          grid-template-columns: repeat(1 ,1fr);
+          gap:10px;
+         /*  overflow-y: hidden;
+          overflow-x: hidden; */
+          grid-template-rows: 400px;
+          div{
+            width: 235px;
+          }
+        div:nth-child(2){
+          display: none;
+        }
+        div:last-child{
+        display: none;
+      }
+  }
+  }
+  /*servicios */
+  .serviciosContainer{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4 ,auto);
+    p{
+      font-size: 1.2rem;
+    }
+    .serviciosArreglo ,  .serviciosTuneo , .serviciosVende{ 
+      flex-direction: column;
+      grid-column: 1/2;
+      .divLeft{
+        width: 100%;
       }
     }
-    /*Index */
-    .encabezado_principal {
-      height: 450px;
-      background-position: center;
+    .serviciosCursos{
+      grid-row: 4/5;
+      grid-column: 1/2;
+      display: block;
     }
-     .cuerpo_secciones {
+  } 
+   /*contacto */
+   .contacto {
+    width: 85%;
+    padding: 10px;
+    border: 2px solid rgb(23, 105, 6);
+    border-radius: 3%;
+    height: 570px;
+
+    .contactoImagen {
+      display: none;
+    }
+    .contactoRight {
       width: 100%;
-      grid-template-columns: 1fr;
-      grid-template-rows: 300px;
-      background-color: white;
-      margin-top: 50px;
-      margin-bottom: 30px;
-
+    }
+  }
+  /*Turnos */
+.seccionTurnos{
+    #carouselExampleSlidesOnly{
+        display: none;
+      }
+    form {
+        font-size: 1.2rem;
+        width: 95%;
+  
+        div {
+          margin: 15px 0;
+  
+          input {
+              margin-left: 5px;
+            }
+        }
+        .botonTurnos{
+          input {
+              width: 160px;
+              margin-right: 15px;
+            } 
+        }
+    }
+}
+}
+@media screen and (max-width: 330px) {
+    /*Index */
+     .cuerpo_secciones {
+      grid-template-rows: 330px;
     .seccionContenido {
-        justify-content: space-around;
-        width: 100%;
-        height: 300px;
-
-        p {
-            margin: 30px 0 30px 0;
-          }
         h2 {
             margin: 50px 5px 20px 0;
           }
        }
-        .seccionesIndexImagen,
-        .seccionesIndexImagen--2{
-            display: none;
-        }
     }
     .conocenosIndex{
-      height: 350px;
-      width: 95vw;
-      grid-template-columns: repeat(1 ,1fr);
-      grid-template-rows: repeat(2 ,1fr);
-
       .divleftIndex1{
-        justify-content: none;
-        width: 100%;
-        height: 100%;
-   
-            p , h2{         
-            padding: 14px;
-            font-size: 0.9rem; 
+            p{         
+            font-size: 1.1rem; 
             } 
             h2{
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
        }
-      .divRightIndex{
-        flex-direction: row;
-        width: 100%;
-        height:100% ;
-        align-items: flex-end;
-       }
-    } 
-    /*Preguntas Frecuentes */
+    }
+    /*preguntasFrecuntes */ 
     .sectionPreguntasFrecuentes{
-      grid-template-columns: repeat(1 ,1fr);
-      grid-template-rows: repeat(10 , 270px);
-
-      .divContainerPreguntasFrecuentesBottom{
-        grid-column: 1/2;
-        grid-template-rows: 4/5;
-      } 
+      padding:5px;
+      h2{
+        font-size: 1.3rem;
+      }
+      p{
+        font-size: 1.1rem;
+      }
+  }
+  /*sobre nsosotrso empresa y sucursales*/
+  .sobreNosotrosImg ,.sectionPresentacionSucursales{
+    display: flex;
+    flex-direction: column;
+    img{
+      height: 50%;
+      width: 100%;
     }
-    
-    /*Sobre nosotros servicios */
-    .serviciosContainer{
-      grid-template-columns: repeat(1,1fr);
-      grid-template-rows: repeat(4 ,auto);
-
-      .serviciosArreglo ,  .serviciosTuneo , .serviciosVende{ 
-       /*  height: fit-content; */
-        flex-direction: column;
-        grid-column: 1/2;
-        .divLeft{
-          width: 100%;
-        }
-      }
-      .serviciosCursos{
-        grid-row: 4/5;
-        grid-column: 1/2;
-        display: block;
-      }
-    }   /* .serviciosArreglo  .serviciosTuneo .serviciosVende*/
-    /*Contacto */
-    .contacto {
-      width: 85%;
-      padding: 10px;
-      border: 2px solid rgb(23, 105, 6);
-      border-radius: 3%;
-      height: 570px;
-
-      .contactoImagen {
-        display: none;
-      }
-      .contactoRight {
-        width: 100%;
-      }
+    div ,.encontranosDivSucursales{
+      height: 50%;
+      width: 100%;
+       order: 1;
     }
-    /* Turnos */
-    .seccionTurnos{
-
-        #carouselExampleSlidesOnly{
-            display: none;
-          }
-        form {
-            font-size: 1.1rem;
-            width: 95%;
-      
-            div {
-              margin: 15px 0;
-      
-              input {
-                  margin-left: 5px;
-                }
-            }
-            .botonTurnos{
-              input {
-                  width: 150px;
-                  margin-right: 15px;
-                } 
-            }
-        }
-    } 
-  } 
+  }
+}
