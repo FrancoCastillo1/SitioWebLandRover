@@ -11,13 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Slab:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/27a566e2ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header class="encabezado">
-      <nav class="navbar navbar-expand-lg bg-light navBoostrap">
+      <nav class="navbar navbar-expand-lg  navBoostrap">
         <div class="container-fluid containerNav">
            <a class="navbar-brand encabezado_logo" href="../index.html">
             <img src="../Imagenes-html/land-rover.jpg" alt="logo empresa land-rover" />
@@ -47,7 +47,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Contacto
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,9 +66,94 @@
     </header>
     <main>
       <section class="sacaTurno">
-        <h1>Saca tu turno , no esperes más</h1>
+        <h1>¡Saca tu turno , no esperes más!</h1>
       </section>
-      <section class="seccionTurnos">
+      <section class="sacaTurnoDestokp">
+        <form>
+          <h2>Selecciona tu provincia:</h2>
+          <div class="containerDivTurnos">
+            <div class="divDivisor">
+              <div data-aos="fade-right" data-aos-one="true" data-aos-duration="1000" >
+                <img src="../Imagenes-html/imgMendozaTurnos.jpg" alt="turnoMendoza">
+                <input type="radio" id="mendoza" name="provincia" />
+                <label for="mendoza">Mendoza</label>
+             </div>
+              <div>
+                <img src="../Imagenes-html/cabaTurnos.jpg" alt="turnoCABA">
+                <input type= "radio" id="caba" name="provincia"/>
+                <label for="caba">CABA</label>
+              </div>
+              <div>
+                <img src="../Imagenes-html/buenosAiresCuidad.jpg" alt="turnoBuenosAires" >
+                <input type="radio" id="buenos-Aires" name="provincia" />
+                <label for="buenos-Aires">Buenos Aires</label>
+              </div>
+              <div>
+                <img src="../Imagenes-html/imgCordobaArgentinajpg.jpg" alt="turnoCordoba">
+                <input type="radio" id="cordoba" name="provincia" />
+                <label for="cordoba">Cordoba</label>
+              </div>
+              <div data-aos="fade-left" data-aos-one="true"  data-aos-duration="700">
+                 <img src="../Imagenes-html/TucumánTurnos.jpg" alt="turnoTucumán" >
+                <input type="radio" id="tucumán" name="provincia" />
+                <label for="tucumán">Tucuman</label>
+              </div>
+            </div>
+            <h2>Selecciona tu día:</h2>
+            <div class="divDivisor">
+              <div>
+                <img src="../Imagenes-html/lunesTurnos.jpg" alt="turnoLunes" >
+                <input type="radio" id="lunes" name="dia" />
+              <label for="lunes">Lunes</label>
+              </div>
+              <div>
+                <img src="../Imagenes-html/martesTurnos.jfif"  alt="turnoMartes">
+                <input type="radio" id="martes" name="dia" />
+                <label for="martes">Martes</label>
+              </div>
+              <div>
+                <img src="../Imagenes-html/imagenesMiercolesTurnos.jfif" alt="turnoMiercoles" >
+                <input type="radio" id="miercoles" name="dia" />
+                <label for="miercoles">Miercoles</label>
+              </div>
+              <div>
+                <img src="../Imagenes-html/cuidadaJuevesTurnos.jfif" alt="turnoJueves">
+                <input type="radio" id="jueves" name="dia" />
+                <label for="jueves">Jueves</label>
+              </div>
+              <div>
+                 <img src="../Imagenes-html/cuidadViernesTurnos.jpg" alt="turnoViernes" >
+                <input type="radio" id="viernes" name="dia" />
+                <label for="viernes">Viernes</label>
+              </div>
+           </div>   
+        <h2>Selecciona tu horario:</h2>
+        <div class="divDivisor" >
+          <div>
+            <img src="../Imagenes-html/imagenMañana.jpeg" alt="turnoMendoza" >
+            <input type="radio" id="9-12" name="horario" />
+          <label for="9-12">9hrs a 12hrs</label>
+          </div>
+          <div  data-aos="flip-up" data-aos-one="true"  data-aos-duration="800"  >
+            <img src="../Imagenes-html/imagenTardeTurnos.jpg"  alt="turnoMendoza" >
+            <input type="radio" id="14-18" name="horario" />
+            <label for="14-18">14hrs a 18hrs</label>
+          </div>
+          <div>
+            <img src="../Imagenes-html/imagenNocheTurnos.webp" alt="turnoMendoza" >
+            <input type="radio" id="19-23" name="horario" />
+            <label for="19-23">19hrs a 23hrs</label>
+          </div>
+        </div>
+        <div class="divDivisor">
+          <div class="botonTurnosImg">
+          <input type="submit" value="Enviar Turnos" >
+        </div> 
+        </div>
+      </div>   
+      </form>
+      </section>
+       <section class="seccionTurnos">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -85,44 +170,44 @@
       <form>
           <h2>Selecciona tu provincia:</h2>
         <div  class="divInputTurnos">
-          <input type="radio" id="mendoza" name="provincia" />
-          <label for="Mendoza">Mendoza</label>
-          <input type="radio" id="caba" name="provincia" />
-          <label for="CABA">CABA</label>
-          <input type="radio" id="Buenos Aires" name="provincia" />
-          <label for="Buenos Aires">Buenos Aires</label>
-          <input type="radio" id="Cordoba" name="provincia" />
-          <label for="Cordoba">Cordoba</label>
-          <input type="radio" id="Tucuman" name="provincia" />
-          <label for="Tucuman">Tucuman</label>
+          <input type="radio" id="mendozaMediaQuery" name="provincia" />
+          <label for="mendozaMediaQuery">Mendoza</label>
+          <input type="radio" id="cabaMediaQuery" name="provincia" />
+          <label for="cabaMediaQuery">CABA</label>
+          <input type="radio" id="buenos-Aires-mediaQuery" name="provincia" />
+          <label for="buenos-Aires-mediaQuery">Buenos Aires</label>
+          <input type="radio" id="cordobaMediaQuery" name="provincia" />
+          <label for="cordobaMediaQuery">Cordoba</label>
+          <input type="radio" id="tucumánMediaQuery" name="provincia" />
+          <label for="tucumánMediaQuery">Tucuman</label>
         </div>
           <h2>Selecciona tu día:</h2>
           <div class="divInputTurnos">
-          <input type="radio" id="lunes" name="dia" />
-          <label for="lunes">Lunes</label>
-          <input type="radio" id="martes" name="dia" />
-          <label for="martes">Martes</label>
-          <input type="radio" id="miércoles" name="dia" />
-          <label for="miercoles">Miércoles</label>
-          <input type="radio" id="jueves" name="dia" />
-          <label for="jueves">Jueves</label>
-          <input type="radio" id="viernes" name="dia" />
-          <label for="viernes">Viernes</label>
+          <input type="radio" id="lunesMediaQuery" name="dia" />
+          <label for="lunesMediaQuery">Lunes</label>
+          <input type="radio" id="martesMediaQuery" name="dia" />
+          <label for="martesMediaQuery">Martes</label>
+          <input type="radio" id="miércolesMediaQuery" name="dia" />
+          <label for="miércolesMediaQuery">Miércoles</label>
+          <input type="radio" id="juevesMediaQuery" name="dia" />
+          <label for="juevesMediaQuery">Jueves</label>
+          <input type="radio" id="viernesMediaQuery" name="dia" />
+          <label for="viernesMediaQuery">Viernes</label>
         </div>
           <h2>Selecciona tu horario:</h2>
           <div class="divInputTurnos">
-          <input type="radio" id="9-15" name="horarios" />
-          <label for="9-12">9hrs a 12hrs</label>
-          <input type="radio" id="9-15" name="horarios" />
-          <label for="14-18">14hrs a 18hrs</label>
-          <input type="radio" id="17-21" name="horarios" />
-          <label for="19-23">19hrs a 23hrs</label>
+          <input type="radio" id="nueve-doce" name="horarios" />
+          <label for="nueve-doce">9hrs a 12hrs</label>
+          <input type="radio" id="catorce-dieciocho" name="horarios" />
+          <label for="catorce-dieciocho">14hrs a 18hrs</label>
+          <input type="radio" id="diecinueve-veintitres" name="horarios" />
+          <label for="diecinueve-veintitres">19hrs a 23hrs</label>
         </div>
         <div class="botonTurnos">
           <input type="submit" value="Enviar Turnos" >
         </div>
     </form>
-    </section>
+    </section> 
     </main>
     <footer class="footer">
       <div class="footerLeft">
@@ -262,7 +347,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
+                    <h5 class="modal-title" id="exampleModalLabel2">
                       Cookies
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -287,18 +372,21 @@
         </li>
           <li>
           <a href="https://hdiseguros.com.ar/wp-content/uploads/2021/12/Denuncia_de_Accidentes_de_Terceros.pdf" target="_blank" class="footerNosotros">Reclamos</a> 
-            </h4>
           </li>
         </ul>
       </div>
       <div class="footerCopyright">
-        <h4><i class="fas fa-copyright"></i>Derechos Reservados LandRover
-          <div>
-            <h5>Cualquier intento de plagio será demandado segun nuestros T&C</h5>
-          </div>
-        </h4>
-      </div>
+        <h4><i class="fas fa-copyright"></i>Derechos Reservados LandRover</h4>
+           <div class="divFooterHover">
+             Cualquier intento de plagio será demandado segun nuestros T&C
+           </div>
+     </div>
     </footer>
+    <script src="https://kit.fontawesome.com/27a566e2ce.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
   </body>

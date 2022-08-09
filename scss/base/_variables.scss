@@ -16,12 +16,6 @@ $coloresSecundarios:(
     justify-content: $justify;
 };
 @mixin backgrounImage($imagenFondo) {
-    /* background{
-       image:$imagenFondo;
-        repeat:no-repeat;
-        position: center;
-        size: cover
-    };  */
     background-image:$imagenFondo;
     background-size: cover;
     background-position: center;

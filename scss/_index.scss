@@ -24,9 +24,6 @@
     grid-template-rows: 300px;
 
     .seccionContenido{
-       /*  display: flex;
-        flex-direction: column;
-        justify-content: space-around; */
         @include flexboxColumnJustify(space-around);
 
         h2{
@@ -62,7 +59,8 @@
 .conocenosIndex{
     width: 80vw;
     margin: 0px auto;
-    height: 350px;
+    /* height: 350px; */
+    padding: 35px;
     border-radius: 5%;
     background-color:$color-principal;
     display: grid;
@@ -75,7 +73,7 @@
         width: 100%;
 
         p , h2 { 
-        color:map-get($coloresSecundarios ,"$colorFuenteSecundario");;    /*problema a arreglar */     
+        color:map-get($coloresSecundarios ,"$colorFuenteSecundario");
         padding: 20px;
         }
     }
@@ -93,24 +91,25 @@
             background-color: #0072b1;
             color:map-get($coloresSecundarios ,"$colorFuenteSecundario");
             padding: 10px;
-            /* height: 40px;
-            width: 100px; */
             border-radius: 10px;
         }
     }
   }
 .seccionNuestrosClientes{
     height: 400px;
-    width: 93vw;
-    margin: 25px auto 0px auto;
+     width: 85vw; 
+     margin: 25px auto 20px auto; 
 
     h2{
+      text-align: center;
+      padding-bottom:10px;
         font-size: 1.5rem;
         color:rgb(16, 94, 16);
       }
     #carouselExampleFade .carousel-inner .carousel-item{
         display: grid;
         grid-template-columns: repeat(3 ,1fr); 
+        justify-items: center;
         gap: 10px;
 
            div {

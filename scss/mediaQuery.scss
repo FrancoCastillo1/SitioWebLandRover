@@ -35,15 +35,11 @@
           font-size: 1.1rem;
           .divRightTerminos{
             padding: 5px;
-           /*  width: 100%; */
             font-size: 1.1rem;
           }
           .divLeft{
             display: none;
-           /*  overflow-x: scroll; */
-           /*  padding-bottom: 10px; */
              border-right: 2px solid $color-principal; 
-             /* width: 100%; */
           }
         }
         .modal-Terminos{
@@ -56,23 +52,21 @@
   }
   .footerCopyright {
       grid-column: 1/2;
-      h4{
-        div{
+      /* h4{ */
+        .divFooterHover {
           width: 300px;
           height: 80px;
-          /* padding: px; */
           top:60px
         }
-      }
+    /*   } */
    }
   #ResponsiveArriba{
-      margin-bottom: 25px; /*esperemos que sea footer */
+      margin-bottom: 25px; 
       margin-right: 20px;
     }
   }
   /*preguntas Frecuentes */
   .sectionPreguntasFrecuentes{
-      /*  padding:20px; */
        grid-template-columns: repeat(2 ,50%);
        grid-template-rows: repeat(5 ,450px);
        .divContainerPreguntasFrecuentesBottom{
@@ -89,10 +83,11 @@
   /*Turnos */
   .seccionTurnos{
     flex-direction: column;
+    display: block;
     #carouselExampleSlidesOnly .carousel-inner{ 
       width: 390px;
       height: 210px;
-      margin:10px;
+      margin:10px auto;
     }
     form {
         font-size: 1.2rem;
@@ -112,6 +107,9 @@
             } 
         }
     }
+}
+.sacaTurnoDestokp{
+  display: none;
 }
           /*galeria */
     .galeriaImagenes{
@@ -161,10 +159,11 @@
       }
   }
   .conocenosIndex{
-    height: 380px;
+   /*  height: 380px; */
+   padding: 10px;
     width: 95vw;
-    grid-template-columns: repeat(1 ,1fr);
-    grid-template-rows: repeat(2 ,1fr);
+    grid-template-columns: repeat(1 ,auto);
+    grid-template-rows: repeat(2 , auto);
 
     .divleftIndex1{
       justify-content: none;
@@ -193,14 +192,11 @@
 
     h2{
         font-size: 1.5rem;
-        /* color:rgb(163, 109, 8); */
       }
     #carouselExampleFade .carousel-inner .carousel-item{
         /* display: grid; */
         grid-template-columns: repeat(2 ,1fr);
         gap:10px;
-       /*  overflow-y: hidden;
-        overflow-x: hidden; */
         grid-template-rows: 360px;
         div{
           width: 245px;
@@ -301,7 +297,6 @@
   }
 }
   /*preguntas Frecuentes */
-   /*  padding: 0px 20px 0px 20px; */
     .sectionPreguntasFrecuentes{
       padding:20px;
       grid-template-columns: repeat(1 ,1fr);
@@ -319,7 +314,7 @@
       } 
     }
   /*Sucursales */ 
- /*  .cardSucursales{
+  .cardSucursales{
     width: 100vw;
     .row{
       width: 100%;
@@ -330,7 +325,7 @@
         margin-top:15px ;
        }
     }
-  } */
+  }
   /*Index */
   .encabezado_principal {
     height: 450px;
@@ -362,10 +357,11 @@
       }
   }
   .conocenosIndex{
-    height: 450px;
+    /* height: 450px; */
+    padding: 10px;
     width: 95vw;
-    grid-template-columns: repeat(1 ,1fr);
-    grid-template-rows: repeat(2 ,1fr);
+    grid-template-columns: repeat(1 ,auto);
+    grid-template-rows: repeat(2 ,auto);
 
     .divleftIndex1{
       justify-content: none;
@@ -386,52 +382,14 @@
       width: 100%;
       height:100% ;
       align-items: center;
+      i{
+        font-size: 2.5rem;
+      }
+      a{
+        font-size: 1.5rem;
+      }
      }
   }
- /*  .seccionNuestrosClientes{
-    display: none;
-  } */
-  /* .seccionNuestrosClientesMobile{
-    display:block;
-    height: 400px;
-    width: 80vw;
-    margin: 25px auto 20px auto;
-
-  h2{
-      font-size: 1.4rem;
-      color:rgb(16, 94, 16);
-    }
-  #carouselExampleFade .carousel-inner{
-    display: grid;
-    grid-template-columns:260px; 
-    grid-template-rows: 360px;
-    .carousel-item{
-     /*  width: 260px;
-      height: 360px; */
-      /* @include flexboxColumnJustify(space-evenly);
-      align-items: center;
-      border: 1px solid rgb(16, 94, 16);
-      border-radius: 3%;
-          p{
-            font-size:1.1rem;
-            padding: 15px;
-            color:$color-principal;
-          }
-          h3{
-            font-size:1.2rem;
-            color:black
-          }
-          i{
-            color:rgb(43, 43, 201)
-          } 
-          img{
-            width: 80px;
-            border-radius: 50%;
-            height: 80px;
-          }
-        }
-      } 
-    } */
     .seccionNuestrosClientes{
       height: 450px;
       width: 77vw;
@@ -439,14 +397,10 @@
   
       h2{
           font-size: 1.5rem;
-          /* color:rgb(163, 109, 8); */
         }
       #carouselExampleFade .carousel-inner .carousel-item{
-          /* display: grid; */
           grid-template-columns: repeat(1 ,1fr);
           gap:10px;
-         /*  overflow-y: hidden;
-          overflow-x: hidden; */
           grid-template-rows: 400px;
           div{
             width: 235px;
@@ -468,12 +422,14 @@
     }
     .serviciosArreglo ,  .serviciosTuneo , .serviciosVende{ 
       flex-direction: column;
+      padding: 35px;
       grid-column: 1/2;
       .divLeft{
         width: 100%;
       }
     }
     .serviciosCursos{
+      padding: 20px;
       grid-row: 4/5;
       grid-column: 1/2;
       display: block;
